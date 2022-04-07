@@ -5,13 +5,16 @@ var vacantReport = document.getElementById("vacantReport");
 var collectionReport = document.getElementById("collectionReport");
 var billingReport = document.getElementById("billingReport");
 var crossIcon = document.getElementById("crossIcon");
-
 var achievementList = document.getElementById('achievementList');
+var homeSide = document.getElementById("homeSide");
+var aboutMeSide = document.getElementById("aboutMeSide");
+var resumeSide = document.getElementById("resumeSide");
+var contactSide = document.getElementById("contactSide");
+var sideBar = document.getElementById("sidebar");
+var hiddenMenu = document.getElementById("menu");
+var sideBarOpen = false;
 
-var homeSide = document.getElementById("homeSide")
-var aboutMeSide = document.getElementById("aboutMeSide")
-var resumeSide = document.getElementById("resumeSide")
-var contactSide = document.getElementById("contactSide")
+
 
 
 clickHandler = (jobName) => {
@@ -30,7 +33,6 @@ clickHandler = (jobName) => {
     descriptiveBox.style.flexDirection = "column";
     achievementList.style.display = "none";
 }
-
 
 
 colorSideBar = () => {
@@ -57,6 +59,22 @@ colorSideBar = () => {
     }
 }
 
+showSideBar = () => {
+
+    if(!sideBarOpen) {
+        sideBar.style.display = 'flex';
+        sideBar.style.flexDirection = 'column';
+        sideBar.style.justifyContent = 'flex-start';
+        sideBarOpen = true;
+    } else {
+        sideBar.style.display = 'none';
+        sideBarOpen = false;
+    }
+
+    // sessionStorage.setItem('data','minzika');
+    // console.log(sessionStorage.getItem('data'));
+
+}
 
 
 debtReport.addEventListener('click',clickHandler.bind(this,"debtReport"));
@@ -66,10 +84,22 @@ billingReport.addEventListener('click',clickHandler.bind(this,"billingReport"));
 crossIcon.addEventListener('click',()=>{descriptiveBox.style.display = "none";
 achievementList.style.display = "block";})
 
-
-// console.log(document.documentElement.scrollTop)
-
-// document.addEventListener('scroll',()=>{console.log(document.documentElement.scrollTop);})
-
 document.addEventListener('scroll',colorSideBar);
+
+homeSide.addEventListener('click',()=>{document.getElementById('homeLink').click()});
+aboutMeSide.addEventListener('click',()=>{document.getElementById('aboutMeLink').click()});
+resumeSide.addEventListener('click',()=>{document.getElementById('resumeLink').click()});
+contactSide.addEventListener('click',()=>{document.getElementById('contactLink').click()});
+
+hiddenMenu.addEventListener('click',showSideBar.bind(this));
+
+window.addEventListener('resize',()=>{
+
+    if(window.innerWidth > 970){
+        sideBar.style.display = 'flex';
+    } else {
+        sideBar.style.display = 'none';
+    }
+
+});
 

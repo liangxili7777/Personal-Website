@@ -12,34 +12,35 @@
     <link rel="stylesheet" href="../styles/contactStyle.css" />
 </head>
 <body id="body">
+    <div id="menu"><img src="../assets/icon/menu-line.svg" alt="menu icon" /></div>
     <div id="sidebar" class="chunk"> 
         <img id="profilepicture" src="../assets/image/profilePicture.jpg" alt="profile picture" />
         <div class="navigation">
             <div class="sideBarItem" id="homeSide">
                 <img class="sideBarImage" src="../assets/icon/home-heart-fill.svg" alt="home icom" />
                 <div class="sideBarItem textbox">
-                    <a class="sideBarItem textbox text" href="#home">Home</a>
+                    <a class="sideBarItem textbox text" id="homeLink" href="#home">Home</a>
                     <p class="sideBarItem textbox description">Get to know me</p>
                 </div>
             </div>
             <div class="sideBarItem" id="aboutMeSide">
                 <img class="sideBarImage" src="../assets/icon/user-voice-fill.svg" alt="user female icon" />
                 <div class="sideBarItem textbox">
-                    <a class="sideBarItem textbox text" href="#aboutMe">About Me</a>
+                    <a class="sideBarItem textbox text" id="aboutMeLink" href="#aboutMe">About Me</a>
                     <p class="sideBarItem textbox description">Who I am</p>
                 </div>
             </div>
             <div class="sideBarItem" id="resumeSide">
                 <img class="sideBarImage" src="../assets/icon/profile-fill.svg" alt="document icon" />
                 <div class="sideBarItem textbox">
-                    <a class="sideBarItem textbox text" href="#resume">Resume</a>
+                    <a class="sideBarItem textbox text" id="resumeLink" href="#resume">Resume</a>
                     <p class="sideBarItem textbox description">Study and work Experience</p>
                 </div>
             </div>
             <div class="sideBarItem" id="contactSide">
                 <img class="sideBarImage" src="../assets/icon/contacts-book-2-fill.svg" alt="contact icon" />
                 <div class="sideBarItem textbox">
-                    <a class="sideBarItem textbox text" href="#contact">Contact</a>
+                    <a class="sideBarItem textbox text" id="contactLink" href="#contact">Contact</a>
                     <p class="sideBarItem textbox description">Get in Touch</p>
                 </div>
             </div>
@@ -77,6 +78,9 @@
 
         <section id="aboutMe">
                 <h1>About Me</h1>
+                <p class="selfDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est
+                    , ipsum sed blanditiis voluptatum iure maxime quod neque architecto totam aspernatur
+                    , voluptatibus quam rerum voluptates libero beatae debitis cum deleniti?</p>
         </section>
 
         <section id="resume">
@@ -90,7 +94,6 @@
                 </ul>
             </div>
             <div class="subgrid achievement">
-
                 <h2>Achievement</h2>
                 <ul id="achievementList">
                     <li>5 Start Rewards of 2017</li>
@@ -108,7 +111,6 @@
                         <div id="billingReport">Billing Performance Report</div> 
                     </li>
                 </ul>
-
                 <div id="descriptiveBox">
                     <div class="descriptiveFlex">
                         <p id="descriptiveText"></p>
@@ -161,11 +163,12 @@
         </section>
 
         <section id="contact">
+            <div id="contacttop"></div>
             <div id="contactcard">
+
                 <h1>Let's Get in Touch!</h1>
 
                 <form class="contactForm">
-
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                         <option selected>Your Title</option>
                         <option value="mr">Mr</option>
@@ -174,13 +177,12 @@
                         <option value="miss">Miss</option>
                         <option value="dr">Dr</option>
                     </select>
-
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="floatingInput" placeholder="Your First Name....">
                         <label for="floatingInput">First Name</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Your First Name....">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Your Last Name....">
                         <label for="floatingInput">Last Name</label>
                     </div>
                     <div class="form-floating mb-3">
@@ -188,7 +190,7 @@
                         <label for="floatingInput">Email</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Your First Name....">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Subject....">
                         <label for="floatingInput">Subject</label>
                     </div>
 
@@ -197,7 +199,9 @@
                         <label for="floatingTextarea2">Comments</label>
                     </div>
 
-                    <input id="submit" type="submit" value="ok" />
+                    <div class="form-floating" id="submitDiv">
+                    <input id="submit" type="submit" value="Submit" />
+                    </div>
                 </form>
             </div>
         </section>

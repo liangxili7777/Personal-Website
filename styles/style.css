@@ -12,6 +12,9 @@
     box-sizing: border-box;
 }
 
+#menu {
+    display: none;
+}
 
 body {
     background-color: rgb(138, 135, 135);
@@ -20,8 +23,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap:0;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
 }
 
 body .chunk {
@@ -45,6 +46,7 @@ h1 {
     font-size: 5vw;
     margin-bottom: 0;
     color:var(--title-color);
+    text-shadow: 5px 5px 10px black;
 }
 
 #sidebar {
@@ -84,7 +86,7 @@ h1 {
 }
 
 .sideBarItem:hover {
-    background-color: var(--hover-background-color);
+    /* background-color: var(--hover-background-color); */
     cursor: pointer;
     color:var(--hover-color);
 }
@@ -95,6 +97,7 @@ h1 {
     margin-right: auto;
     margin-top: 7vh;
     margin-bottom: 7vh;
+    border-radius: 50px;
 }
 
 .sideBarImage {
@@ -116,18 +119,12 @@ h1 {
     color: var(--title-color);
 }
 
-.sideBarItem.textbox a:hover {
-    color:var(--hover-color);
-}
-
 .sideBarItem.textbox.text {
-    /* border: 2px solid red; */
     padding-top: 10px;;
     padding-bottom: 0;
     text-align: left;
 }
 .sideBarItem.textbox.description {
-    /* border:2px solid purple; */
     padding-top: 0;
     padding-bottom: 10px;
     font-size: 0.5em;
@@ -172,10 +169,20 @@ h1 {
     padding-top: 16vh;
 }
 
-
-
 #home p {
     font-size: 1.8vh;
+}
+
+#aboutMe h1{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.selfDescription {
+    padding-top: 3%;
+    padding-left: 10%;
+    max-width: 60%;
+    font-style: italic;
 }
 
 #resume {
@@ -192,12 +199,14 @@ h1 {
     color:var(--title-color);
     padding-top: 10vh;
     padding-left: 5vw;
+    text-shadow: 5px 5px 10px black;
 }
 
 #resume ul {
     padding-left: 5vw;
     padding-right: 5vw;
     list-style: none;
+    width:fit-content;
 }
 
 .achievement ul li:nth-last-child(-n+4):hover {
@@ -210,6 +219,8 @@ h1 {
     display: none;
 } */
 
+
+
 #descriptiveBox{
     /* position: absolute; */
     top:20px;
@@ -220,11 +231,12 @@ h1 {
     padding-right: 1vw;
     padding-left: 2vw;
     padding-bottom: 2vh;
-    width: 35vw;
+    width: 70%;
     max-height:30vh;
     border-radius: 20px;
     transition: 0.8s ease-in-out;
     display: none;
+    opacity: 0.6;
 }
 
 .descriptiveFlex {
@@ -270,10 +282,12 @@ h1 {
     padding-top: 2%;
     text-align: center;
     flex-basis: auto;
+    font-size: 0.8vw;
 }
 
 .subgrid.row h3 {
     color: var(--title-color);
+    text-shadow: 5px 5px 10px black;
 }
 
 .experience.title {
