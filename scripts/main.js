@@ -4,6 +4,8 @@ var debtReport = document.getElementById("debtReport");
 var vacantReport = document.getElementById("vacantReport");
 var collectionReport = document.getElementById("collectionReport");
 var billingReport = document.getElementById("billingReport");
+var kaggle = document.getElementById("kaggle");
+var award = document.getElementById("award");
 var crossIcon = document.getElementById("crossIcon");
 var achievementList = document.getElementById('achievementList');
 var homeSide = document.getElementById("homeSide");
@@ -27,6 +29,10 @@ clickHandler = (jobName) => {
         descriptiveText.innerHTML = "This is the description of Collection Report."
     } else if (jobName==="billingReport"){
         descriptiveText.innerHTML = "This is the description of Billing Report."
+    } else if (jobName==="kaggle"){
+        descriptiveText.innerHTML = "This is the description of Kaggle competition."
+    } else if (jobName==="award"){
+        descriptiveText.innerHTML = "This is the description of Five Start reward."
     }
 
     descriptiveBox.style.display = "flex";
@@ -81,6 +87,8 @@ debtReport.addEventListener('click',clickHandler.bind(this,"debtReport"));
 vacantReport.addEventListener('click',clickHandler.bind(this,"vacantReport"));
 collectionReport.addEventListener('click',clickHandler.bind(this,"collectionReport"));
 billingReport.addEventListener('click',clickHandler.bind(this,"billingReport"));
+award.addEventListener('click',clickHandler.bind(this,"award"));
+kaggle.addEventListener('click',clickHandler.bind(this,"kaggle"));
 crossIcon.addEventListener('click',()=>{descriptiveBox.style.display = "none";
 achievementList.style.display = "block";})
 

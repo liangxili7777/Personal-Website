@@ -46,7 +46,7 @@ h1 {
     font-size: 5vw;
     margin-bottom: 0;
     color:var(--title-color);
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 4px 3px 5px black;
 }
 
 #sidebar {
@@ -199,7 +199,7 @@ h1 {
     color:var(--title-color);
     padding-top: 10vh;
     padding-left: 5vw;
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 4px 3px 5px black;
 }
 
 #resume ul {
@@ -209,7 +209,7 @@ h1 {
     width:fit-content;
 }
 
-.achievement ul li:nth-last-child(-n+4):hover {
+.achievement ul li:hover {
     color:var(--title-color);
     font-weight: bold;
     transform: translateY(-5px);
@@ -287,7 +287,7 @@ h1 {
 
 .subgrid.row h3 {
     color: var(--title-color);
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 2px 2px 3px black;
 }
 
 .experience.title {
