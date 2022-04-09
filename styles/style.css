@@ -5,6 +5,7 @@
     --hover-color:blueviolet;
     --hover-background-color:rgb(156, 193, 194);
     --sideBar-background-color:rgba(228, 235, 232, 0.897);
+    --descriptive-box-background:rgb(233, 231, 231);
 }
 
 * {
@@ -38,9 +39,9 @@ body .chunk {
     flex-direction: column;
 }
 
-section {
+/* section {
     border:1px solid grey;
-}
+} */
 
 h1 {
     font-size: 5vw;
@@ -86,10 +87,12 @@ h1 {
 }
 
 .sideBarItem:hover {
-    /* background-color: var(--hover-background-color); */
+    background-color: var(--hover-background-color);
     cursor: pointer;
     color:var(--hover-color);
+    /* z-index: 10; */
 }
+
 
 #profilepicture {
     width: 16vh;
@@ -222,21 +225,23 @@ h1 {
 
 
 #descriptiveBox{
-    /* position: absolute; */
+    /* position: relative; */
     top:20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--hover-background-color);
+    /* margin-left: auto; */
+    margin-left:5vw;
+    /* margin-right: auto; */
+    background-color:var(--descriptive-box-background);
+    filter: brightness(0.8);
     padding-top:2vh;
     padding-right: 1vw;
     padding-left: 2vw;
     padding-bottom: 2vh;
     width: 70%;
     max-height:30vh;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 0.8s ease-in-out;
     display: none;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .descriptiveFlex {
@@ -283,6 +288,7 @@ h1 {
     text-align: center;
     flex-basis: auto;
     font-size: 0.8vw;
+    max-height: 40vh;
 }
 
 .subgrid.row h3 {
@@ -340,4 +346,15 @@ h1 {
     left: 50%;
     margin-left: -3px;
     z-index: 1;
+}
+
+
+.sidebar.borderLine {
+    border-bottom: var(--hover-background-color) solid 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.section.borderLine {
+    border-bottom: var(--hover-background-color) solid 1px;
 }

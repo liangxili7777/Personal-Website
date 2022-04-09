@@ -23,6 +23,7 @@
                     <p class="sideBarItem textbox description">Get to know me</p>
                 </div>
             </div>
+            <div class="sidebar borderLine"></div>
             <div class="sideBarItem" id="aboutMeSide">
                 <img class="sideBarImage" src="../assets/icon/user-voice-fill.svg" alt="user female icon" />
                 <div class="sideBarItem textbox">
@@ -30,13 +31,15 @@
                     <p class="sideBarItem textbox description">Who I am</p>
                 </div>
             </div>
+            <div class="sidebar borderLine"></div>
             <div class="sideBarItem" id="resumeSide">
                 <img class="sideBarImage" src="../assets/icon/profile-fill.svg" alt="document icon" />
                 <div class="sideBarItem textbox">
                     <a class="sideBarItem textbox text" id="resumeLink" href="#resume">Resume</a>
-                    <p class="sideBarItem textbox description">Study and work Experience</p>
+                    <p class="sideBarItem textbox description">Experience</p>
                 </div>
             </div>
+            <div class="sidebar borderLine"></div>
             <div class="sideBarItem" id="contactSide">
                 <img class="sideBarImage" src="../assets/icon/contacts-book-2-fill.svg" alt="contact icon" />
                 <div class="sideBarItem textbox">
@@ -75,14 +78,14 @@
                 <li></li>
             </ul>
         </section>
-
+        <div class="section borderLine" id="line1"></div>
         <section id="aboutMe">
                 <h1>About Me</h1>
                 <p class="selfDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis est
                     , ipsum sed blanditiis voluptatum iure maxime quod neque architecto totam aspernatur
                     , voluptatibus quam rerum voluptates libero beatae debitis cum deleniti?</p>
         </section>
-
+        <div class="section borderLine" id="line2"></div>
         <section id="resume">
             <div class="subgrid">
                 <h2>Skills</h2>
@@ -96,24 +99,12 @@
             <div class="subgrid achievement">
                 <h2>Achievement</h2>
                 <ul id="achievementList">
-                    <li>
-                        <div id="award">5 Start Rewards of 2017</div>
-                    </li>
-                    <li>
-                        <div id="kaggle">Kaggle Competitor</div>
-                    </li>
-                    <li>
-                        <div id="debtReport">Debot Tracking Report</div>
-                    </li>
-                    <li>
-                        <div id="vacantReport">Vacant Consumption Report</div> 
-                    </li>
-                    <li>
-                        <div id="collectionReport">Collection Cycle Report</div> 
-                    </li>
-                    <li>
-                        <div id="billingReport">Billing Performance Report</div> 
-                    </li>
+                    <li id="award">5 Start Rewards of 2017</li>
+                    <li id="kaggle">Kaggle Competitor</li>
+                    <li id="debtReport">Debot Tracking Report</li>
+                    <li id="vacantReport">Vacant Consumption Report</li>
+                    <li id="collectionReport">Collection Cycle Report</li>
+                    <li id="billingReport">Billing Performance Report</li>
                 </ul>
                 <div id="descriptiveBox">
                     <div class="descriptiveFlex">
@@ -123,38 +114,44 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <div class="subgrid experience">
                 <div class="subgrid row"> 
                     <h3 class="experience title">Education</h3>
-                    <h3 class="experience title">Work Experience</h3>
+                    <h3 class="experience title">Work</h3>
                 </div>
                 <div class="subgrid row">
                     <div class="left">
-                        Tianjin University
+                        <p>Tianjin University</p>
                     </div>
-                    <div class="subgrid time right">2008</div>
+                    <div class="subgrid time right">
+                        <p>2008</p>
+                    </div>
                 </div>
                 <div class="subgrid row">
                     <div class="left">
-                        University of Melbourne
+                        <p>University of Melbourne</p>
                     </div>
-                    <div class="subgrid time  right">2012</div>
-                </div>
-                <div class="subgrid row">
-                    <div class="subgrid time left">2015</div>
-                    <div class="right">
-                        Billing Officer - WINconnect
+                    <div class="subgrid time right">
+                        <p>2012</p>
                     </div>
                 </div>
                 <div class="subgrid row">
-                    <div class="subgrid time left">2018</div>
+                    <div class="subgrid time left">
+                        <p>2015</p>
+                    </div>
                     <div class="right">
-                        Data Analyst - WINconnect
+                        <p>Billing Officer - WINconnect</p>
                     </div>
                 </div>
-
+                <div class="subgrid row">
+                    <div class="subgrid time left">
+                        <p>2018</p>
+                    </div>
+                    <div class="right">
+                        <p>Data Analyst - WINconnect</p>
+                    </div>
+                </div>
             </div>
             <div class="subgrid">
                 <h2>Link</h2>
@@ -165,13 +162,11 @@
                 </ul>
             </div>
         </section>
-
+        <div class="section borderLine" id="line3"></div>
         <section id="contact">
             <div id="contacttop"></div>
             <div id="contactcard">
-
                 <h1>Let's Get in Touch!</h1>
-
                 <form class="contactForm">
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                         <option selected>Your Title</option>
@@ -182,34 +177,32 @@
                         <option value="dr">Dr</option>
                     </select>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Your First Name....">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="firstName">
                         <label for="floatingInput">First Name</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Your Last Name....">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="lastName">
                         <label for="floatingInput">Last Name</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="email">
                         <label for="floatingInput">Email</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="Subject....">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="subject">
                         <label for="floatingInput">Subject</label>
                     </div>
-
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea class="form-control" id="floatingTextarea2" style="height: 100px" placeholder="comment"></textarea>
                         <label for="floatingTextarea2">Comments</label>
                     </div>
-
                     <div class="form-floating" id="submitDiv">
-                    <input id="submit" type="submit" value="Submit" />
+                        <input id="submit" type="submit" value="Submit" />
                     </div>
                 </form>
             </div>
         </section>
-
+        <div class="section borderLine" id="line4"></div>
     </div>
     <script src="../scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

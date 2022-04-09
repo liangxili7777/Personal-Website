@@ -16,7 +16,12 @@ var sideBar = document.getElementById("sidebar");
 var hiddenMenu = document.getElementById("menu");
 var sideBarOpen = false;
 
+var line1 = document.getElementById("line1");
+var line2 = document.getElementById("line2");
+var line3 = document.getElementById("line3");
+var line4 = document.getElementById("line4");
 
+// var firstName = document.querySelector("")
 
 
 clickHandler = (jobName) => {
@@ -43,19 +48,24 @@ clickHandler = (jobName) => {
 
 colorSideBar = () => {
 
-    let pageHeight = document.body.clientHeight;
+    // let pageHeight = document.body.clientHeight;
+    let firstBreak = line1.offsetTop/2;
+    let secondBreak = (line2.offsetTop + line1.offsetTop)/2;
+    let thirdBreak = (line3.offsetTop + line2.offsetTop)/2;
+    // let fourthBreak = (line4.offsetTop + line3.offsetTop)/2;
+
     let currentHeight = document.documentElement.scrollTop;
     let normalColor = "rgba(228, 235, 232, 0.897)";
     let currentColor = "rgb(67, 94, 95)";
 
-    if (currentHeight <= pageHeight * 0.125) {
+    if (currentHeight <= firstBreak) {
         homeSide.style.backgroundColor = currentColor;
         aboutMeSide.style.backgroundColor = normalColor;
-    } else if (currentHeight > pageHeight * 0.125 && currentHeight <= pageHeight * 0.375){
+    } else if (currentHeight > firstBreak && currentHeight <= secondBreak){
         homeSide.style.backgroundColor = normalColor;
         aboutMeSide.style.backgroundColor = currentColor;
         resumeSide.style.backgroundColor = normalColor;
-    } else if (currentHeight > pageHeight * 0.375 && currentHeight <= pageHeight * 0.625){
+    } else if (currentHeight > secondBreak && currentHeight <= thirdBreak){
         aboutMeSide.style.backgroundColor = normalColor;
         resumeSide.style.backgroundColor = currentColor;
         contactSide.style.backgroundColor = normalColor;
