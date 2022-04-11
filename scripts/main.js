@@ -1,27 +1,25 @@
-var descriptiveBox = document.getElementById("descriptiveBox");
-var descriptiveText = document.getElementById("descriptiveText");
-var debtReport = document.getElementById("debtReport");
-var vacantReport = document.getElementById("vacantReport");
-var collectionReport = document.getElementById("collectionReport");
-var billingReport = document.getElementById("billingReport");
-var kaggle = document.getElementById("kaggle");
-var award = document.getElementById("award");
-var crossIcon = document.getElementById("crossIcon");
-var achievementList = document.getElementById('achievementList');
-var homeSide = document.getElementById("homeSide");
-var aboutMeSide = document.getElementById("aboutMeSide");
-var resumeSide = document.getElementById("resumeSide");
-var contactSide = document.getElementById("contactSide");
-var sideBar = document.getElementById("sidebar");
-var hiddenMenu = document.getElementById("menu");
-var sideBarOpen = false;
+let descriptiveBox = document.getElementById("descriptiveBox");
+let descriptiveText = document.getElementById("descriptiveText");
+let debtReport = document.getElementById("debtReport");
+let vacantReport = document.getElementById("vacantReport");
+let collectionReport = document.getElementById("collectionReport");
+let billingReport = document.getElementById("billingReport");
+let kaggle = document.getElementById("kaggle");
+let award = document.getElementById("award");
+let crossIcon = document.getElementById("crossIcon");
+let achievementList = document.getElementById('achievementList');
+let homeSide = document.getElementById("homeSide");
+let aboutMeSide = document.getElementById("aboutMeSide");
+let resumeSide = document.getElementById("resumeSide");
+let contactSide = document.getElementById("contactSide");
+let sideBar = document.getElementById("sidebar");
+let hiddenMenu = document.getElementById("menu");
+let sideBarOpen = false;
 
-var line1 = document.getElementById("line1");
-var line2 = document.getElementById("line2");
-var line3 = document.getElementById("line3");
-var line4 = document.getElementById("line4");
-
-// var firstName = document.querySelector("")
+let line1 = document.getElementById("line1");
+let line2 = document.getElementById("line2");
+let line3 = document.getElementById("line3");
+let line4 = document.getElementById("line4");
 
 
 clickHandler = (jobName) => {
