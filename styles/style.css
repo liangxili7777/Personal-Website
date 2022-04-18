@@ -279,7 +279,7 @@ h1 {
 }
 
 .subgrid.row {
-    /* border: 3px solid red; */
+    /* border: 2px solid red; */
     border: none;
     display: flex;
     flex-direction: row;
@@ -288,7 +288,14 @@ h1 {
     text-align: center;
     flex-basis: auto;
     font-size: 0.8vw;
-    max-height: 40vh;
+    max-height: 30vh;
+    flex-basis: 20%;
+}
+
+.subgrid.row:nth-child(1) {
+    /* border: 2px solid red; */
+    flex-basis: 10%;
+    justify-content: space-between;
 }
 
 .subgrid.row h3 {
@@ -297,7 +304,7 @@ h1 {
 }
 
 .experience.title {
-    flex-basis: 50%;
+    flex-basis: 30%;
 }
 
 /* draw the orange circle */

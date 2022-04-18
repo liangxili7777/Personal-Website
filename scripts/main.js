@@ -85,9 +85,15 @@ showSideBar = () => {
         sideBarOpen = false;
     }
 
-    // sessionStorage.setItem('data','minzika');
-    // console.log(sessionStorage.getItem('data'));
+}
 
+function closeSideBar(event) {
+    let isClickInsideElement = sideBar.contains(event.target);
+    let isClickOnMenu = hiddenMenu.contains(event.target);
+    if(!isClickInsideElement && !isClickOnMenu && sideBarOpen===true){
+        sideBar.style.display = 'none';
+        sideBarOpen = false;
+    }
 }
 
 
@@ -118,4 +124,6 @@ window.addEventListener('resize',()=>{
     }
 
 });
+
+document.addEventListener('click',closeSideBar.bind(this));
 

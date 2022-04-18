@@ -29,7 +29,7 @@ body {
 
 #menu:hover{
     background-color: var(--hover-background-color);
-    opacity: 60%;
+    opacity: 70%;
     cursor: pointer;
 }
 
@@ -279,6 +279,13 @@ h1 {
     flex-basis: auto;
     font-size: 2vw;
     max-height: 40vh;
+    flex-basis: 20%;
+}
+
+.subgrid.row:nth-child(1) {
+    /* border: 2px solid red; */
+    flex-basis: 10%;
+    justify-content: space-between;
 }
 
 .subgrid.row h3 {
@@ -288,7 +295,7 @@ h1 {
 }
 
 .experience.title {
-    flex-basis: 50%;
+    flex-basis: 30%;
 }
 
 /* draw the orange circle */
@@ -332,8 +339,8 @@ h1 {
     position:absolute;
     width: 4px;
     background-color:var(--title-color);
-    top: 0;
-    bottom: 0;
+    top: 2vh;
+    bottom: 2vh;
     left: 50%;
     margin-left: -3px;
     z-index: 1;
